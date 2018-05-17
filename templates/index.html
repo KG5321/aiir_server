@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+<div id="inputs">
+    <h1>Aplikacje Internetowe i Rozproszone</h1>
+    <h2>Łamacz haseł</h2>
+    <form action="/" method="POST">
+        <label>Input 1:</label>
+        <input type="text" id="input1" class="form-control" name="input1"/>
+        <label>Input 2:</label>
+        <input type="text" id="input2" class="form-control" name="input2"/>
+        <button type="submit" class="btn btn-success">Wyślij dane</button>
+    </form>
+    <div id="outputs">
+        <h2>Informacja zwrotna</h2>
+        <p>Output: {{ output }}</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+<style scoped>
+    #add-blog *{
+        box-sizing: border-box;
+    }
+    #inputs{
+        margin: 20px auto;
+        max-width: 700px;
+    }
+    label{
+        display: block;
+        margin: 20px 0 10px;
+    }
+    input[type="text"], textarea{
+        display: block;
+        width: 100%;
+        padding: 8px;
+    }
+    #outputs{
+        padding: 10px 20px;
+        border: 1px dotted #ccc;
+        margin: 30px 0;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    #button1{
+        margin: 10px;
+    }
+</style>
+</html>
