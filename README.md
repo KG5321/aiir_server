@@ -11,8 +11,9 @@ Server created for project "Aplikacje Internetowe i Rozproszone"
 
 - PostrgreSQL
 
-## Author
+## Authors:
 
+- **Kuba Białas**
 - **Adam Guszkowski**
 - **Konrad Gebler**
 
