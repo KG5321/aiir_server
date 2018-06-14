@@ -2,8 +2,6 @@ body {
     padding-top: 20px;
     padding-bottom: 40px;
     background-color: #eee;
-    /*display: flex;
-    align-items: center;*/
 
 }
 h1.hstyle {
@@ -80,4 +78,78 @@ input[type="text"], textarea{
 }
 #o2-text {
     margin-bottom: 20px;
+}
+#hash {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    width: 30%;
+}
+.boxes {
+    margin-top: 15px;
+}
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
+
+#combo {
+    width: 100%;
+}
+
+#wezly {
+    margin-left: 20px;
+}
+
+#number {
+}
+.btn-group{
+    flex-wrap: wrap;
+}
+.btn-group input[type=checkbox]{
+        display: none
+    }
+input[type=checkbox]+label{
+    width: auto;
+    margin: 10px 0 0 10px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 36px;
+    background: #fff;
+    color:#007bff;
+    transition: all 0.3s;
+   text-align: center;
+   border: 2px solid #007bff;
+   cursor: pointer;
+}
+input[type=checkbox]:checked+label{
+   background: #007bff;
+   color: #fff;
+}
+input[type=checkbox]+label:hover{
+    background: #007bff;
+    color: #fff;
+}
+.form-group{
+      position: relative;
+    top: -50px;
+    left: 20px;
+    line-height: 40px;
+}
+
+select, #wezly input{
+    position: relative;
+    top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#wezly input{
+    width: 80px;
+    text-align: center;
+}
+
+.input-group{
+    margin-top: 10px;
 }

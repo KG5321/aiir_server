@@ -12,14 +12,46 @@
 
     <h1 class="hstyle">Aplikacje Internetowe i Rozproszone</h1>
     <h2 class='hstyle'>Łamacz haseł</h2>
-    <form>
-        <label class="input-describe">Input 1:</label>
-        <input type="text" id="input1" class="form-control"/>
-        <label class="input-describe" id="input_1">Input 2:</label>
-        <input type="text" id="input2" class="form-control"/>
-        <button id="button1" class="btn btn-lg btn-primary btn-block"> Wyslij dane</button>
+    <form action="/" method="post">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="input-describe">Hasło: </label>
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                  <select id="combo" name="hashowanie">
+                    <option value="metoda1">md5</option>
+                    <!--<option value="metoda2">combobox 1</option>
+                    <option value="metoda3">combobox 2</option>
+                    <option value="metoda4">combobox 3</option>-->
+                </select>
+            </div>
 
-    </form>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               <div class="input-group">
+                            <div id="radioBtn" class="btn-group">
+                                <label for="fun"  class="input-describe control-label text-right">Alfabet: </label>
+                                <input type="checkbox" id="alfabet1" name="alfabet[]" value="alfabet1"><label for="alfabet1">Alfabet 1</label>
+                                <input type="checkbox" id="alfabet2" name="alfabet[]" value="alfabet2"><label for="alfabet2">Alfabet 2</label>
+                                <input type="checkbox" id="alfabet3" name="alfabet[]" value="alfabet3"><label for="alfabet3">Alfabet 3</label>
+                                <input type="checkbox" id="alfabet4" name="alfabet[]" value="alfabet4"><label for="alfabet4">Alfabet 4</label>
+                            </div>
+                        </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                 <label class="input-describe">Ilość węzłów: </label>
+                <input id="number" name="wezly" type="number">
+            </div>
+        </div>
+        <button id="button1" type="submit" class="btn btn-lg btn-primary btn-block"> Wyslij dane</button>
+</form>
     <div id="outputs">
         <h2>Informacja zwrotna</h2>
         <p id="o1">Output 1:</p>
@@ -28,20 +60,11 @@
 
 </div>
 
-<script type="text/javascript">
-    function wyslij() {
-        let var_input1;
-        let var_input2;
-        document.getElementById("o1_text").innerHTML= var_input1;
-        document.getElementById("o2_text").innerHTML= var_input2;
-    }
-</script>
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="../static/js/example.js"></script>
 </body>
 
 </html>
