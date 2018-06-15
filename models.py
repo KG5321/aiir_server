@@ -34,7 +34,7 @@ class Orders(db.Model):
     method = db.Column('method', db.Integer)
     status = db.Column('status', db.Integer)
     result = db.Column('result', db.String)
-    time = db.Column('time', db.Float)
+    time = db.Column('time', db.String)
 
     def __init__(self):
         self.id_order = id_order
