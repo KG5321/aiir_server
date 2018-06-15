@@ -10,7 +10,7 @@ class User(db.Model):
     salt = db.Column('salt', db.String)
     permissions = db.Column('permissions', db.Integer)
 
-    def __repr__(self):
+    def __init__(self):
        self.id = id
        self.login = login
        self.email = email
@@ -19,6 +19,8 @@ class User(db.Model):
        selt.permissions = permissions
        return self.name
 
+    def __repr__(self):
+       return '<id {}>'.format(self.id)
 
 
 class Orders(db.Model):
@@ -34,7 +36,7 @@ class Orders(db.Model):
     result = db.Column('result', db.String)
     time = db.Column('time', db.Float)
 
-    def __repr__(self):
+    def __init__(self):
         self.id_order = id_order
         self.id_user = id_user
         self.date = date
@@ -46,3 +48,6 @@ class Orders(db.Model):
         self.result = result
         self.time = time
         return self.name
+
+    def __repr__(self):
+        return '<id {}>'.format(self.id_order)
