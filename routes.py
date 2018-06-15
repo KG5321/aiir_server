@@ -6,7 +6,14 @@ import spur
 def index():
     if request.method == 'GET':
         return render_template('index.html')
-    val1 = request.form['input1']
-    val2 = request.form['input2']
+    val1 = request.form['input'] #input
+    val2 = request.form['hashowanie'] #hashing method
+    val3 = request.form['alfabet[]'] #alphabet
+    val4 = request.form['wezly'] #number of clusters
+
+
     output = "Test"
-    return render_template('index.html', output=output)
+    # actually there are 3 lines of output: hash, password and time
+
+
+    return render_template('index.html', output=output) #to be added: time, hash
