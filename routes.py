@@ -1,4 +1,5 @@
 from server import app, db
+from pexpect import pxssh
 from flask import render_template, request
 from models import User, Orders
 import spur
@@ -12,8 +13,8 @@ def index():
     val2 = request.form['hashowanie'] #hashing method
     val3 = request.form['alfabet[]'] #alphabet
     val4 = request.form['wezly'] #number of clusters
-
-    query = Orders(1, str(datetime.datetime.now()), val1, val4, val3, val2, 0, null, null)
+    
+    query = Orders(1, str(datetime.datetime.now()), val1, val4, 1, val2, 0, "0", "0")
     db.session.add(query)
     db.session.commit()
 

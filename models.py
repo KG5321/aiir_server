@@ -31,23 +31,21 @@ class Orders(db.Model):
     input = db.Column('input', db.String)
     clusters = db.Column('clusters', db.Integer)
     grain = db.Column('grain', db.Integer)
-    method = db.Column('method', db.Integer)
+    method = db.Column('method', db.String)
     status = db.Column('status', db.Integer)
     result = db.Column('result', db.String)
     time = db.Column('time', db.String)
 
-    def __init__(self):
-        self.id_order = id_order
+    def __init__(self,id_user,date,inputt,clusters,grain,method,status,result,time):
         self.id_user = id_user
         self.date = date
-        self.input = input
+        self.input = inputt
         self.clusters = clusters
         self.grain = grain
         self.method = method
         self.status = status
         self.result = result
         self.time = time
-        return self.name
 
     def __repr__(self):
         return '<id {}>'.format(self.id_order)
